@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="history-panel">
+      <h3>Riwayat (5 terakhir)</h3>
+      <ul id="historyList"></ul>
+    </div>
+
+    <div class="calculator">
+      <div class="display">
+        <div id="currentInput"></div>
+        <div id="display">0</div>
+      </div>
+      <div class="buttons">
+        
+        <button class="clear" onclick="clearAll()">C</button>
+        <button class="clear" onclick="clearEntry()">CE</button>
+        <button class="mem" onclick="memoryRecall()">MR</button>
+        <button class="mem" onclick="memoryClear()">MC</button>
+
+        
+        <button class="mem" onclick="memoryAdd()">M+</button>
+        <button class="mem" onclick="memorySub()">M−</button>
+        <button class="op" onclick="inputOperator('/')">÷</button>
+        <button class="op" onclick="inputOperator('*')">×</button>
+
+        
+        <button class="num" onclick="inputDigit('7')">7</button>
+        <button class="num" onclick="inputDigit('8')">8</button>
+        <button class="num" onclick="inputDigit('9')">9</button>
+        <button class="op" onclick="inputOperator('-')">−</button>
+
+        
+        <button class="num" onclick="inputDigit('4')">4</button>
+        <button class="num" onclick="inputDigit('5')">5</button>
+        <button class="num" onclick="inputDigit('6')">6</button>
+        <button class="op" onclick="inputOperator('+')">+</button>
+
+        
+        <button class="num" onclick="inputDigit('1')">1</button>
+        <button class="num" onclick="inputDigit('2')">2</button>
+        <button class="num" onclick="inputDigit('3')">3</button>
+        <button class="eq" onclick="calculate()">=</button>
+
+        
+        <button class="num wide" onclick="inputDigit('0')">0</button>
+        <button class="dec" onclick="inputDecimal()">.</button>
+        <button class="op" onclick="inputOperator('%')">%</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
